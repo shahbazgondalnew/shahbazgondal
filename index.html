@@ -4,142 +4,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shahbaz Gondal - CV</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-            color: #333;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 20px;
-            background-color: #222;
-            color: white;
-            padding: 20px 0;
-        }
-
-        h1 {
-            color: #3498db;
-        }
-
-        h2 {
-            color: #2c3e50;
-        }
-
-        section {
-            margin-bottom: 20px;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            background-color: #fff;
-            color: #555;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        a {
-            color: #3498db;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .list-icon {
-            font-size: 20px;
-            color: #3498db;
-            margin-right: 10px;
-        }
-    </style>
+    <title>Shahbaz Gondal - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
-        <h1>Shahbaz Gondal</h1>
-        <p>shahbaz.gondal588@gmail.com  |  Faisalabad</p>
-        <p>Github: <a href="https://github.com/shahbazgondalnew" target="_blank">shahbazgondalnew</a> | Linkedin: <a
-                href="https://www.linkedin.com/in/shahbazgondal" target="_blank">shahbazgondal</a></p>
+        <div class="container">
+            <div class="header-content">
+                <img src="sqr.png" alt="Shahbaz Gondal" class="profile-image">
+                <div class="header-info">
+                    <h1>Shahbaz Gondal</h1>
+                    <p class="tagline">Passionate Computer Science Graduate</p>
+                    <div class="contact-info">
+                        <p>Contact: +923130041445 | Email: <a href="mailto:shahbaz.gondal588@gmail.com">shahbaz.gondal588@gmail.com</a></p>
+                        <p>GitHub: <a href="https://github.com/shahbazgondalnew" style="color: blue;">shahbazgondalnew</a> | LinkedIn: <a href="https://www.linkedin.com/in/shahbazgondal" style="color: blue;">shahbazgondal</a></p>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#work">Work Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#volunteer">Volunteer Work</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-
-    <section>
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>AutoKaar</h3>
-            <p>FYP Project | Flutter Android Application | January 2023 to Present</p>
-            <p>AutoKaar is a Flutter appointment app that facilitates communication and scheduling between car users and
-                mechanics. It consists of two modules, one for mechanics and one for customers, providing features such as
-                appointment management, chat, vehicle parts suggestions, maintenance history, reminders, mechanic finder,
-                and reviews.</p>
-        </div>
-
-        <div class="project">
-            <h3>Sport Club Management System</h3>
-            <p>Database Project | Window Form Application | January 2022 to May 2022</p>
-            <p>A window form application for sport management system.</p>
+    
+    
+    <section id="skills">
+        <div class="container">
+            <h2>Skills and Frameworks</h2>
+            <p>Frameworks: Flutter, Firebase, ASP.NET, MVC, Identity</p>
+            <p>Programming Languages: C++, C#, Python, Dart, Java</p>
+            <p>Tools: Git, Android Studio, Visual Studio, PyCharm, ArcGIS, ENVI</p>
         </div>
     </section>
+    
+   
 
-    <section>
-        <h2>Education</h2>
-        <p>Bachelor of Computer Science</p>
-        <p>Institution: FAST NUCES Chiniot Faisalabad Campus</p>
-        <p>Year of Graduation: 2023</p>
-    </section>
-
-    <section>
-        <h2>Work Experience</h2>
-        <div>
-            <h3>Web Developer (Remote)</h3>
-            <p>Sahar Eastern Cont. Company, Saudi Arabia | May 2023 to Present</p>
-            <p>Managing company domain, professional emails, and developing website</p>
+    <section id="work">
+        <div class="container">
+            <h2>Work Experience</h2>
+            <div class="experience">
+                <h3>Sahar Eastern Cont. Company (Remote)</h3>
+                <p class="date">May 2023 - December 2023</p>
+                <p>Managed company website development using Flutter, seamlessly integrating company digital presence.</p>
+                <p>Managed and optimized the company's domain and professional email services through GoDaddy.</p>
+                
+                
+            </div>
         </div>
     </section>
 
-    <section>
-        <h2>Skills</h2>
-        <ul class="skills">
-            <li><span class="list-icon">&#8226;</span> C++, Python, Dart, C#</li>
-            <li><span class="list-icon">&#8226;</span> Flutter, Firebase, .NET</li>
-            <li><span class="list-icon">&#8226;</span> Android Studio</li>
-            <li><span class="list-icon">&#8226;</span> OOP, Data Structure, SQL</li>
-            <li><span class="list-icon">&#8226;</span> Software Testing, Data Warehouse, ArcGIS</li>
-        </ul>
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <p>Bachelor of Computer Science</p>
+            <p>FAST NUCES Chiniot Faisalabad Campus</p>
+            <p>Graduation: May 2024</p>
+            <p>Courses: Data Science, Software Testing, Remote Sensing and GIS, Data Warehousing, Advanced Programming</p>
+            <p>Curricular activities: Management Team ICIT 2022</p>
+        </div>
     </section>
 
-    <section>
-        <h2>Volunteer Work</h2>
-        <ul>
-            <li><span class="list-icon">&#8226;</span> Event Head, Daira'19</li>
-            <li><span class="list-icon">&#8226;</span> Member of Organizing Committee, Daira'22</li>
-            <li><span class="list-icon">&#8226;</span> Social Media Head, FAST Adventure Club</li>
-            <li><span class="list-icon">&#8226;</span> Social Media Content Creator, Facebook</li>
-        </ul>
+    
+
+    <section id="volunteer">
+        <div class="container">
+            <h2>Volunteer Work</h2>
+            <ul>
+                <li>Event Head at Daira'19</li>
+                <li>Member of Organizing Committee at Daira'22</li>
+                <li>Social Media Head at FAST Adventure Club</li>
+                <li>Social Media Content Creator at Facebook</li>
+            </ul>
+        </div>
     </section>
 
-    <section>
-        <h2>Hobbies</h2>
-        <ul>
-            <li><span class="list-icon">&#8226;</span> Travelling</li>
-            <li><span class="list-icon">&#8226;</span> Music</li>
-            <li><span class="list-icon">&#8226;</span> Memes</li>
-            <li><span class="list-icon">&#8226;</span> Video Editing</li>
-            <li><span class="list-icon">&#8226;</span> Sci-Fi Movies</li>
-        </ul>
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>AutoKaar</h3>
+                <p class="tech">Flutter, Firebase, Google Map API</p>
+                <p class="date">January 2023 to December 2023</p>
+                <p>AutoKaar is a flutter appointment app facilitating communication and scheduling between car users and mechanics. It consists of two modules, one for mechanics and one for customers, providing features such as appointment management, chat, vehicle parts suggestions, maintenance history, reminders, mechanic finder, and reviews.</p>
+                <div class="screenshots">
+                    <img src="screenshot1.jpeg" alt="Screenshot 1">
+                    <img src="screenshot2.jpeg" alt="Screenshot 2">
+                    <img src="screenshot3.jpeg" alt="Screenshot 3">
+                    <img src="screenshot4.jpeg" alt="Screenshot 4">
+                    <img src="screenshot5.jpeg" alt="Screenshot 5">
+                    <img src="screenshot6.jpeg" alt="Screenshot 6">
+                </div>
+                <p class="repo"><a href="#">Repository Link</a></p>
+            </div>
+            <div class="project">
+                <h3>Property Hub</h3>
+                <p class="tech">ASP.NET, SQL, MVC, Identity</p>
+                <p class="date">January 2023 to May 2023</p>
+                <p>Property Hub, developed with ASP.NET, MVC, Identity Framework, and SQL Server, streamlines property transactions with secure authentication and listing features. Its MVC architecture ensures easy maintenance, while the Identity Framework guarantees user data security, making it a reliable platform for buyers and sellers alike.</p>
+                <p><a href="https://drive.google.com/drive/folders/19LgOl-26RaJr4Opw6p4KyxZN3yB-G5sA?usp=sharing" target="_blank">Link to File</a></p>
+            </div>
+            <div class="project">
+                <h3>Cricket Club Management System</h3>
+                <p class="tech">Window Form Application, SQL</p>
+                <p class="date">August 2021 to January 2022</p>
+                <p>A window form application for sports management system using SQL Server. Coaches and Players can manage their teams and their profile.</p>
+                <p class="repo"><a href="#">Repository Link</a></p>
+            </div>
+            <div class="project">
+                <h3>Data Scraping and Sentiment Analysis</h3>
+                <p class="tech">Python, PyCharm</p>
+                <p class="date">Course Project</p>
+                <ul>
+                    <li>Data Scraping to extract image, video, audio, text from website.</li>
+                    <li>Utilized the "Corona_NLP_test.csv" dataset from Kaggle to annotate tweets with sentiment labels including "Positive," "Extremely positive," "Negative," and "Extremely negative" using LLM.</li>
+                    <li><a href="#">Link to file</a></li>
+                </ul>
+            </div>
+        </div>
     </section>
+
+    <section id="hobbies">
+        <div class="container">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Video Editing</li>
+                <li>Social Media Account Management</li>
+                <li>Content Creation</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Shahbaz Gondal</p>
+        </div>
+    </footer>
 </body>
 
 </html>
