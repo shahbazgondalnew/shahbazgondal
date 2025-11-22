@@ -16,7 +16,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <span class="logo-text">SG</span>
+                <span class="logo-text">SA</span>
             </div>
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
@@ -54,7 +54,22 @@
                     </h1>
                     <p class="hero-subtitle">Flutter Developer</p>
                     <p class="hero-description">Building beautiful cross-platform mobile applications with Flutter</p>
-                    <p class="hero-location">📍 Dammam, Saudi Arabia | 🇵🇰 Pakistani</p>
+                    <div class="hero-location-container">
+                        <div class="location-box current-location">
+                            <span class="location-label">📍 Current Location</span>
+                            <div class="location-content">
+                                <span class="location-flag">🇸🇦</span>
+                                <span class="location-text">Dammam, Saudi Arabia</span>
+                            </div>
+                        </div>
+                        <div class="location-box nationality">
+                            <span class="location-label">🌍 Nationality</span>
+                            <div class="location-content">
+                                <span class="location-flag">🇵🇰</span>
+                                <span class="location-text">Pakistani</span>
+                            </div>
+                        </div>
+                    </div>
                     <div class="hero-badges">
                         <span class="badge">📱 Mobile Developer</span>
                         <span class="badge">🔥 Flutter Expert</span>
@@ -136,12 +151,13 @@
                 <div class="skill-category">
                     <h3 class="category-title">🔧 Libraries & SDKs</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">Flutter TeX</span>
-                        <span class="skill-tag">MathQuill</span>
-                        <span class="skill-tag">WebView</span>
                         <span class="skill-tag">Firebase Analytics</span>
                         <span class="skill-tag">Firebase Crashlytics</span>
                         <span class="skill-tag">Firebase Remote Config</span>
+                        <span class="skill-tag">Firebase Cloud Messaging</span>
+                        <span class="skill-tag">Flutter TeX</span>
+                        <span class="skill-tag">MathQuill</span>
+                        <span class="skill-tag">WebView</span>
                         <span class="skill-tag">OCR</span>
                     </div>
                 </div>
@@ -193,8 +209,10 @@
                         <li><strong>AI Math Solver:</strong> Added advanced math calculator interface using WebView, converted math expressions to professional representation using MathQuill, improved AI response formatting and localization</li>
                         <li><strong>Handwriting to Text (OCR App):</strong> Implemented handwriting recognition using Firebase Functions and Google ML Kit, delivered fast offline/online OCR recognition</li>
                         <li><strong>AI Photo Enhancer:</strong> Redesigned complete UI, added AI-powered features (black & white to color, image unblur/enhancement, "Future Kid" generation), integrated backend AI processing and Firebase services</li>
-                        <li>Upgraded 12+ apps to latest Android SDK (Compile SDK 35), migrated multiple apps from REST APIs to Firebase Functions</li>
-                        <li>Integrated and maintained Firebase Analytics, Crashlytics, Remote Config, and RevenueCat subscriptions</li>
+                        <li>Implemented Firebase Cloud Messaging (FCM) for push notifications across multiple apps, including notification handling, deep linking, and user engagement features</li>
+                        <li>Upgraded 12+ apps to latest Android SDK (Compile SDK 35), ensuring compatibility with latest Android features and security updates</li>
+                        <li>Migrated multiple apps from REST APIs to Firebase Functions for improved scalability and performance</li>
+                        <li>Integrated and maintained Firebase Analytics, Crashlytics, Remote Config, Firebase Cloud Messaging, and RevenueCat subscriptions</li>
                         <li>Added usage limits and remote configuration controls, resolved app crashes and stability issues across multiple products</li>
                         <li>Contributed to multi-language localization and UI improvements across apps</li>
                     </ul>
@@ -328,6 +346,11 @@
                         </div>
                     </div>
                     <h3>Keevana - Mobile POS</h3>
+                    <div class="project-platforms">
+                        <span class="platform-badge">📱 Android</span>
+                        <span class="platform-badge">🍎 iOS</span>
+                        <span class="platform-badge">🌐 Web</span>
+                    </div>
                     <p class="project-tech">Flutter • iOS • Android • Web • Firebase • Cloud Sync</p>
                     <p class="project-date">August 2025 - Present</p>
                     <p class="project-description">A comprehensive all-in-one Point of Sale (POS) application for retailers worldwide. Features include sales tracking, stock management, retail POS billing, barcode scanning, cloud-based inventory management, digital receipts, employee access management, online shop creation, expense tracking, real-time analytics, and offline mode. Available on iOS, Android, and Web platforms.</p>
@@ -339,6 +362,11 @@
                         <div class="project-links"></div>
                     </div>
                     <h3>Derivative Calculator</h3>
+                    <div class="project-platforms">
+                        <span class="platform-badge">📱 Android</span>
+                        <span class="platform-badge">🍎 iOS</span>
+                        <span class="platform-badge">💻 Mac</span>
+                    </div>
                     <p class="project-tech">Flutter • Firebase Functions • Flutter TeX • MathQuill • WebView</p>
                     <p class="project-date">March 2025 - December 2025</p>
                     <p class="project-description">Fully redesigned UI/UX for modern user experience. Migrated backend from REST API to Firebase Functions. Developed complex scientific calculator with fractions, square roots, and advanced math symbols. Implemented custom math input using Flutter TeX + MathQuill via WebView. Enhanced solution steps to dynamically display in user-selected language.</p>
@@ -350,6 +378,11 @@
                         <div class="project-links"></div>
                     </div>
                     <h3>AI Math Solver</h3>
+                    <div class="project-platforms">
+                        <span class="platform-badge">📱 Android</span>
+                        <span class="platform-badge">🍎 iOS</span>
+                        <span class="platform-badge">💻 Mac</span>
+                    </div>
                     <p class="project-tech">Flutter • WebView • MathQuill • AI Integration</p>
                     <p class="project-date">March 2025 - December 2025</p>
                     <p class="project-description">Added advanced math calculator interface similar to Derivative app using WebView. Converted input and output math expressions from plain text to professional mathematical representation using MathQuill. Improved AI response formatting for better readability and localization.</p>
@@ -361,6 +394,11 @@
                         <div class="project-links"></div>
                     </div>
                     <h3>Handwriting to Text (OCR App)</h3>
+                    <div class="project-platforms">
+                        <span class="platform-badge">📱 Android</span>
+                        <span class="platform-badge">🍎 iOS</span>
+                        <span class="platform-badge">💻 Mac</span>
+                    </div>
                     <p class="project-tech">Flutter • Firebase Functions • Google ML Kit • OCR</p>
                     <p class="project-date">March 2025 - December 2025</p>
                     <p class="project-description">Implemented handwriting recognition using Firebase Functions. Used Google ML Kit for OCR where required. Delivered fast and reliable offline/online recognition with high accuracy.</p>
@@ -372,6 +410,11 @@
                         <div class="project-links"></div>
                     </div>
                     <h3>AI Photo Enhancer</h3>
+                    <div class="project-platforms">
+                        <span class="platform-badge">📱 Android</span>
+                        <span class="platform-badge">🍎 iOS</span>
+                        <span class="platform-badge">💻 Mac</span>
+                    </div>
                     <p class="project-tech">Flutter • Firebase • AI Processing • Image Enhancement</p>
                     <p class="project-date">March 2025 - December 2025</p>
                     <p class="project-description">Redesigned complete UI and enhanced performance. Added AI-powered features including black & white to color conversion, image unblur/enhancement, and "Future Kid" generation (generate child image from parents). Integrated backend AI processing and Firebase services.</p>
@@ -381,10 +424,14 @@
                     <div class="project-header">
                         <div class="project-icon">🌟</div>
                         <div class="project-links">
-                            <a href="https://github.com/shahbazgondalnew/autokaar" class="project-link" target="_blank">🔗</a>
+                            <a href="https://originof.live/" class="project-link" target="_blank" title="Web App">🌐</a>
                         </div>
                     </div>
                     <h3>Origin Of: Meme, Trend & Story</h3>
+                    <div class="project-platforms">
+                        <span class="platform-badge">📱 Android</span>
+                        <span class="platform-badge">🌐 Web</span>
+                    </div>
                     <p class="project-tech">Flutter • Firebase • Admob • Google Play Console</p>
                     <p class="project-date">December 2024 - March 2025</p>
                     <p class="project-description">A platform designed to satisfy curiosity about the origins of trending images. It allows users to delve into the backstories of popular visuals, providing detailed information about their source, creators, significance, and creation year.</p>
@@ -403,7 +450,10 @@
                             <a href="https://play.google.com/store/apps/details?id=com.meme.socialapp" class="project-link" target="_blank">🔗</a>
                         </div>
                     </div>
-                    <h3>AutoKaar</h3>
+                    <h3>AutoKaar <span class="project-label">Final Year Project</span></h3>
+                    <div class="project-platforms">
+                        <span class="platform-badge">📱 Android</span>
+                    </div>
                     <p class="project-tech">Flutter • Firebase • Google Map API</p>
                     <p class="project-date">January 2023 - December 2023</p>
                     <p class="project-description">A comprehensive Flutter-based appointment application designed to streamline communication and scheduling between car users and mechanics with real-time chat, service history, and location-based mechanic finding.</p>
@@ -425,6 +475,9 @@
                         </div>
                     </div>
                     <h3>PawID Pets Info</h3>
+                    <div class="project-platforms">
+                        <span class="platform-badge">📱 Android</span>
+                    </div>
                     <p class="project-tech">Flutter • Firebase • Google Vision API • Google Gemini API</p>
                     <p class="project-date">September 2024</p>
                     <p class="project-description">An application developed with Flutter where users can detect dog breeds by capturing images or selecting images from a gallery using AI-powered breed recognition.</p>
@@ -445,6 +498,10 @@
                         </div>
                     </div>
                     <h3>Nexamena</h3>
+                    <div class="project-platforms">
+                        <span class="platform-badge">📱 Android</span>
+                        <span class="platform-badge">🍎 iOS</span>
+                    </div>
                     <p class="project-tech">Flutter • Firebase • Google Map API • Stripe Payment</p>
                     <p class="project-date">November 2024</p>
                     <p class="project-description">An online store for electronics with a wide range of categories. Includes Flutter Application with cart functionality, Google Maps integration, order tracking, and Stripe payment gateway.</p>
@@ -466,6 +523,9 @@
                         </div>
                     </div>
                     <h3>Property Hub</h3>
+                    <div class="project-platforms">
+                        <span class="platform-badge">🪟 Windows</span>
+                    </div>
                     <p class="project-tech">ASP.NET • SQL • MVC • Identity</p>
                     <p class="project-date">January 2023 - May 2023</p>
                     <p class="project-description">A web application for secure property transactions with user authentication, role-based access control, and secure storage of property listings using ASP.NET MVC and SQL Server.</p>
@@ -484,6 +544,9 @@
                         </div>
                     </div>
                     <h3>Cricket Club Management System</h3>
+                    <div class="project-platforms">
+                        <span class="platform-badge">🪟 Windows</span>
+                    </div>
                     <p class="project-tech">Windows Forms • SQL</p>
                     <p class="project-date">August 2021 - January 2022</p>
                     <p class="project-description">A Windows Forms application for sports management using SQL Server, allowing coaches and players to manage teams and personal profiles efficiently.</p>
@@ -494,7 +557,7 @@
                         <div class="project-icon">🤖</div>
                         <div class="project-links"></div>
                     </div>
-                    <h3>Data Scraping & AI Projects</h3>
+                    <h3>Data Scraping & AI Projects <span class="project-label">University Course Project</span></h3>
                     <p class="project-tech">Python • OpenAI API • Tableau • Flutter</p>
                     <p class="project-date">Course Project</p>
                     <p class="project-description">Multiple projects including Flutter app with GPT-3 integration, LLM fine-tuning, geospatial data visualization, and web scraping automation.</p>

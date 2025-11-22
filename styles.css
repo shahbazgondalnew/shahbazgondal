@@ -279,27 +279,76 @@ body {
     max-width: 600px;
 }
 
-.hero-location {
-    font-size: 1rem;
-    color: var(--text-primary);
+.hero-location-container {
+    display: flex;
+    gap: 1rem;
     margin-bottom: 2rem;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 0.75rem 1.5rem;
+    flex-wrap: wrap;
+}
+
+.location-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 1.5rem;
     background: var(--card-bg);
-    border-radius: 50px;
+    border-radius: 16px;
     box-shadow: var(--shadow-sm);
     border: 1px solid var(--border-color);
     transition: var(--transition);
     font-weight: 500;
+    min-width: 200px;
 }
 
-.hero-location:hover {
+.location-box:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
     background: var(--card-bg-hover);
-    border-color: var(--primary-color);
+}
+
+.location-box.current-location {
+    border-left: 4px solid var(--secondary-color);
+    background: linear-gradient(135deg, rgba(19, 185, 253, 0.1), rgba(1, 117, 194, 0.05));
+}
+
+.location-box.current-location:hover {
+    border-color: var(--secondary-color);
+    background: linear-gradient(135deg, rgba(19, 185, 253, 0.15), rgba(1, 117, 194, 0.1));
+}
+
+.location-box.nationality {
+    border-left: 4px solid var(--accent-color);
+    background: linear-gradient(135deg, rgba(255, 107, 107, 0.1), rgba(255, 107, 107, 0.05));
+}
+
+.location-box.nationality:hover {
+    border-color: var(--accent-color);
+    background: linear-gradient(135deg, rgba(255, 107, 107, 0.15), rgba(255, 107, 107, 0.1));
+}
+
+.location-label {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.location-content {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.location-flag {
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.location-text {
+    font-size: 1rem;
+    color: var(--text-primary);
+    font-weight: 500;
 }
 
 .hero-badges {
@@ -743,6 +792,45 @@ section {
     color: var(--text-primary);
 }
 
+.project-platforms {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.75rem;
+}
+
+.platform-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.35rem 0.75rem;
+    background: rgba(19, 185, 253, 0.15);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+    transition: var(--transition);
+}
+
+.platform-badge:hover {
+    background: rgba(19, 185, 253, 0.25);
+    transform: scale(1.05);
+}
+
+.project-label {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: var(--gradient-flutter);
+    color: white;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin-left: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
 .project-tech {
     color: var(--primary-color);
     font-size: 0.9rem;
@@ -956,11 +1044,28 @@ section {
         font-size: 1rem;
     }
 
-    .hero-location {
-        font-size: 0.9rem;
+    .hero-location-container {
         justify-content: center;
-        padding: 0.6rem 1.2rem;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .location-box {
+        width: 100%;
+        max-width: 300px;
+        padding: 0.9rem 1.2rem;
+    }
+
+    .location-label {
+        font-size: 0.7rem;
+    }
+
+    .location-text {
+        font-size: 0.9rem;
+    }
+
+    .location-flag {
+        font-size: 1.3rem;
     }
 
     .projects-grid {
@@ -1022,9 +1127,21 @@ section {
         font-size: 1.3rem;
     }
 
-    .hero-location {
+    .location-box {
+        padding: 0.8rem 1rem;
+        min-width: auto;
+    }
+
+    .location-label {
+        font-size: 0.65rem;
+    }
+
+    .location-text {
         font-size: 0.85rem;
-        padding: 0.6rem 1.2rem;
+    }
+
+    .location-flag {
+        font-size: 1.2rem;
     }
 
     .section-title {
