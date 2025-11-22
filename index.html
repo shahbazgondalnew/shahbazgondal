@@ -4,232 +4,429 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shahbaz Gondal - Portfolio</title>
+    <title>Shahbaz Gondal - Flutter Developer</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">SG</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#work" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#volunteer" class="nav-link">Volunteer</a></li>
+                <li><a href="privacy.html" class="nav-link">Privacy</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
         <div class="container">
-            <div class="header-content">
-                <img src="sqr.png" alt="Shahbaz Gondal" class="profile-image">
-                <div class="header-info">
-                    <h1>Shahbaz Gondal</h1>
-                    <p class="tagline">Computer Science Graduate</p>
-                    <div class="contact-info">
-                        <p>Contact: +923130041445 | Email: <a href="mailto:shahbaz.gondal588@gmail.com">shahbaz.gondal588@gmail.com</a></p>
-                        <p>GitHub: <a href="https://github.com/shahbazgondalnew" style="color: blue;">shahbazgondalnew</a> | LinkedIn: <a href="https://www.linkedin.com/in/shahbazgondal" style="color: blue;">shahbazgondal</a></p>
-                        <p>Medium: <a href="https://medium.com/@shahbaz.gondal588" style="color: blue;">shahbaz.gondal588</a> | Resume: <a href="https://drive.google.com/file/d/1C_uFArFihuYqG7oyxC_seCIWzVr4qR8o/view" style="color: blue;">View Resume</a></p>
-                        
+            <div class="hero-content">
+                <div class="hero-image-wrapper">
+                    <div class="image-glow"></div>
+                    <img src="sqr.png" alt="Shahbaz Gondal" class="hero-profile-image">
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Shahbaz Gondal</span>
+                    </h1>
+                    <p class="hero-subtitle">Flutter Developer</p>
+                    <p class="hero-description">Building beautiful cross-platform mobile applications with Flutter</p>
+                    <div class="hero-badges">
+                        <span class="badge">📱 Mobile Developer</span>
+                        <span class="badge">🔥 Flutter Expert</span>
+                        <span class="badge">🚀 Full Stack</span>
+                    </div>
+                    <div class="hero-social">
+                        <a href="mailto:shahbaz.gondal588@gmail.com" class="social-link" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        </a>
+                        <a href="https://github.com/shahbazgondalnew" class="social-link" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/shahbazgondal" class="social-link" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="https://medium.com/@shahbaz.gondal588" class="social-link" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+                        </a>
+                        <a href="https://drive.google.com/file/d/1C_uFArFihuYqG7oyxC_seCIWzVr4qR8o/view" class="social-link resume-btn" target="_blank">
+                            <span>Resume</span>
+                        </a>
                     </div>
                 </div>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#work">Work Experience</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#volunteer">Volunteer Work</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#hobbies">Hobbies</a></li>
-                    <li><a href="privacy.html">Privacy Policy</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    
-    <section id="skills">
-        <div class="container">
-            <h2>Skills and Frameworks</h2>
-            <p>Frameworks: Flutter, Firebase, ASP.NET, MVC, Identity</p>
-            <p>Programming Languages: C++, C#, Python, Dart, Java</p>
-            <p>Tools: Git, Android Studio, Visual Studio, Tableau, PyCharm, ArcGIS, ENVI, Google Map API, OpenAI</p>
         </div>
     </section>
     
-    <section id="work">
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
         <div class="container">
-            <h2>Work Experience</h2>
-            <div class="experience">
-                <h3>Grow More IT Solution</h3>
-                <p class="date">September 2024 - December 2024 </p>
-                <p> Developed a wide range of Utility applications for Android and iOS such as Animal Breed Detection, Plant Identification, Food Reiepe, and Company EMS System using Flutter, Firebase, Google Cloud API, Google Vision, Google Generative AI</p>
-                <p>Developed backend using Python to integrate Attendance device for real-time integration of Attendance with Flutter application</p>
-                <p>Developed Admin Portal using Flutter for Web for Company EMS sytem</p>
-                <p>Manage Google Play Console for publishing applications for different types of testing and Production Mode. </p>
-                
-                
+            <h2 class="section-title">
+                <span class="title-number">01.</span>
+                <span class="title-text">Skills & Technologies</span>
+                <span class="title-line"></span>
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">📱 Mobile Frameworks</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag flutter">Flutter</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">Dart</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">💻 Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Dart</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">Java</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">🌐 Web Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">ASP.NET</span>
+                        <span class="skill-tag">MVC</span>
+                        <span class="skill-tag">Identity</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">🛠️ Tools & APIs</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Android Studio</span>
+                        <span class="skill-tag">Visual Studio</span>
+                        <span class="skill-tag">Google Maps API</span>
+                        <span class="skill-tag">OpenAI API</span>
+                        <span class="skill-tag">Tableau</span>
+                        <span class="skill-tag">PyCharm</span>
+                    </div>
+                </div>
             </div>
-            <div class="experience">
-                <h3>MZ Innovations</h3>
-                <p class="date">July 2024 - September 2024</p>
-                <p>Enhanced the Rizq24, Expert Club app by fixing bugs, adding features, and integrating with backend APIs using GetX for Android and IOs platforms using Flutter, while developing a FastAPI backend to extract data from images with Google Cloud API such as Generative AI API, Vision API, Google Cloud Run and regex.</p>
+        </div>
+    </section>
+    
+    <!-- Work Experience Section -->
+    <section id="work" class="work-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">02.</span>
+                <span class="title-text">Work Experience</span>
+                <span class="title-line"></span>
+            </h2>
+            <div class="timeline">
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-icon">💼</div>
+                        <div class="experience-title-group">
+                            <h3>Grow More IT Solution</h3>
+                            <p class="experience-date">September 2024 - December 2024</p>
+                        </div>
+                    </div>
+                    <ul class="experience-list">
+                        <li>Developed a wide range of Utility applications for Android and iOS such as Animal Breed Detection, Plant Identification, Food Recipe, and Company EMS System using Flutter, Firebase, Google Cloud API, Google Vision, Google Generative AI</li>
+                        <li>Developed backend using Python to integrate Attendance device for real-time integration of Attendance with Flutter application</li>
+                        <li>Developed Admin Portal using Flutter for Web for Company EMS system</li>
+                        <li>Managed Google Play Console for publishing applications for different types of testing and Production Mode</li>
+                    </ul>
+                </div>
                 
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-icon">🚀</div>
+                        <div class="experience-title-group">
+                            <h3>MZ Innovations</h3>
+                            <p class="experience-date">July 2024 - September 2024</p>
+                        </div>
+                    </div>
+                    <ul class="experience-list">
+                        <li>Enhanced the Rizq24, Expert Club app by fixing bugs, adding features, and integrating with backend APIs using GetX for Android and iOS platforms using Flutter</li>
+                        <li>Developed a FastAPI backend to extract data from images with Google Cloud API such as Generative AI API, Vision API, Google Cloud Run and regex</li>
+                    </ul>
+                </div>
+                
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="experience-icon">🌐</div>
+                        <div class="experience-title-group">
+                            <h3>Sahar Eastern Cont. Company (Remote)</h3>
+                            <p class="experience-date">May 2023 - December 2023</p>
+                        </div>
+                    </div>
+                    <ul class="experience-list">
+                        <li>Managed company website development using Flutter, seamlessly integrating company digital presence</li>
+                        <li>Managed and optimized the company's domain and professional email services through GoDaddy</li>
+                    </ul>
+                </div>
             </div>
-            <div class="experience">
-                <h3>Sahar Eastern Cont. Company (Remote)</h3>
-                <p class="date">May 2023 - December 2023</p>
-                <p>Managed company website development using Flutter, seamlessly integrating company digital presence.</p>
-                <p>Managed and optimized the company's domain and professional email services through GoDaddy.</p>
-            </div>
-            
         </div>
     </section>
 
-    <section id="education">
+    <!-- Education Section -->
+    <section id="education" class="education-section">
         <div class="container">
-            <h2>Education</h2>
-            <p>Bachelor of Computer Science</p>
-            <p>FAST NUCES Chiniot Faisalabad Campus</p>
-            <p>Graduation: 10th June 2024</p>
-            <p>Courses: Data Science, Software Testing, Remote Sensing and GIS, Data Warehousing, Advanced Programming</p>
-            <p>Curricular activities: Management Team ICIT 2022</p>
+            <h2 class="section-title">
+                <span class="title-number">03.</span>
+                <span class="title-text">Education</span>
+                <span class="title-line"></span>
+            </h2>
+            <div class="education-card">
+                <div class="education-icon">🎓</div>
+                <div class="education-content">
+                    <h3>Bachelor of Computer Science</h3>
+                    <p class="education-institution">FAST NUCES Chiniot Faisalabad Campus</p>
+                    <p class="education-date">Graduation: 10th June 2024</p>
+                    <div class="education-details">
+                        <div class="detail-item">
+                            <strong>Key Courses:</strong>
+                            <span>Data Science, Software Testing, Remote Sensing and GIS, Data Warehousing, Advanced Programming</span>
+                        </div>
+                        <div class="detail-item">
+                            <strong>Activities:</strong>
+                            <span>Management Team ICIT 2022</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="volunteer">
+    <!-- Volunteer Section -->
+    <section id="volunteer" class="volunteer-section">
         <div class="container">
-            <h2>Volunteer Work</h2>
-            <ul>
-                <li>Event Head at Daira</li>
-                <li>Member of Organizing Committee at Daira'22</li>
-                <li>Social Media Head at FAST Adventure Club</li>
-                <li>Social Media Content Creator at Facebook</li>
-            </ul>
+            <h2 class="section-title">
+                <span class="title-number">04.</span>
+                <span class="title-text">Volunteer Work</span>
+                <span class="title-line"></span>
+            </h2>
+            <div class="volunteer-grid">
+                <div class="volunteer-card">
+                    <div class="volunteer-icon">🎯</div>
+                    <h3>Event Head</h3>
+                    <p>Daira</p>
+                </div>
+                <div class="volunteer-card">
+                    <div class="volunteer-icon">👥</div>
+                    <h3>Organizing Committee</h3>
+                    <p>Daira'22</p>
+                </div>
+                <div class="volunteer-card">
+                    <div class="volunteer-icon">📱</div>
+                    <h3>Social Media Head</h3>
+                    <p>FAST Adventure Club</p>
+                </div>
+                <div class="volunteer-card">
+                    <div class="volunteer-icon">✍️</div>
+                    <h3>Content Creator</h3>
+                    <p>Facebook</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="projects">
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
         <div class="container">
-            <h2>Projects</h2>
-            
-            <div class="project">
-                <h3>Origin Of: Meme, Trend & Story</h3>
-                <p class="tech">Flutter, Firebase, Admob, Google Play Console</p>
-                <p class="date">December 2024 to March 2025</p>
-                <p>Origin Of is a platform designed to satisfy curiosity about the origins of trending images. It allows users to delve into the backstories of popular visuals, providing detailed information about their source, the individuals or creators involved, their significance, and the year they were created or became popular. Whether it's for research, entertainment, or pure curiosity, Origin Of offers a comprehensive way to explore the narratives and histories behind the visuals shaping our world.</p>
-                <div class="screenshots">
-                    <img src="origin1.jpg" alt="Screenshot 1">
-                    <img src="origin2.jpg" alt="Screenshot 2">
-                    <img src="origin3.jpg" alt="Screenshot 3">
-                    <img src="origin4.jpg" alt="Screenshot 4">
-                    <img src="origin4.jpg" alt="Screenshot 5">
+            <h2 class="section-title">
+                <span class="title-number">05.</span>
+                <span class="title-text">Featured Projects</span>
+                <span class="title-line"></span>
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <div class="project-icon">🌟</div>
+                        <div class="project-links">
+                            <a href="https://github.com/shahbazgondalnew/autokaar" class="project-link" target="_blank">🔗</a>
+                        </div>
+                    </div>
+                    <h3>Origin Of: Meme, Trend & Story</h3>
+                    <p class="project-tech">Flutter • Firebase • Admob • Google Play Console</p>
+                    <p class="project-date">December 2024 - March 2025</p>
+                    <p class="project-description">A platform designed to satisfy curiosity about the origins of trending images. It allows users to delve into the backstories of popular visuals, providing detailed information about their source, creators, significance, and creation year.</p>
+                    <div class="screenshots">
+                        <img src="origin1.jpg" alt="Screenshot 1">
+                        <img src="origin2.jpg" alt="Screenshot 2">
+                        <img src="origin3.jpg" alt="Screenshot 3">
+                        <img src="origin4.jpg" alt="Screenshot 4">
+                    </div>
                 </div>
-                <p class="repo"><a href="https://github.com/shahbazgondalnew/autokaar">Play Store</a></p>
-            </div>
 
-            <div class="project">
-                <h3>AutoKaar</h3>
-                <p class="tech">Flutter, Firebase, Google Map API</p>
-                <p class="date">January 2023 to December 2023</p>
-                <p>AutoKaar is a comprehensive Flutter-based appointment application designed to streamline communication and scheduling between car users and mechanics. The app is divided into two distinct modules: one catering to mechanics and the other to customers, each offering tailored features to enhance the service experience. For mechanics, AutoKaar provides tools for managing appointments efficiently, facilitating direct chat with customers, suggesting vehicle parts, maintaining service histories, setting reminders for upcoming tasks, and enabling customers to find mechanics based on their location or specialty. Customers benefit from seamless appointment scheduling, real-time communication with mechanics, personalized vehicle maintenance recommendations, access to their service history, reminders for future appointments or maintenance tasks, and the ability to review and rate services received. AutoKaar integrates these functionalities within a user-friendly interface, ensuring both mechanics and customers can easily navigate and utilize its features to enhance their car servicing experience.</p>
-                <div class="screenshots">
-                    <img src="screenshot1.jpeg" alt="Screenshot 1">
-                    <img src="screenshot2.jpeg" alt="Screenshot 2">
-                    <img src="screenshot3.jpeg" alt="Screenshot 3">
-                    <img src="screenshot4.jpeg" alt="Screenshot 4">
-                    <img src="screenshot5.jpeg" alt="Screenshot 5">
-                    <img src="screenshot6.jpeg" alt="Screenshot 6">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🚗</div>
+                        <div class="project-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.meme.socialapp" class="project-link" target="_blank">🔗</a>
+                        </div>
+                    </div>
+                    <h3>AutoKaar</h3>
+                    <p class="project-tech">Flutter • Firebase • Google Map API</p>
+                    <p class="project-date">January 2023 - December 2023</p>
+                    <p class="project-description">A comprehensive Flutter-based appointment application designed to streamline communication and scheduling between car users and mechanics with real-time chat, service history, and location-based mechanic finding.</p>
+                    <div class="screenshots">
+                        <img src="screenshot1.jpeg" alt="Screenshot 1">
+                        <img src="screenshot2.jpeg" alt="Screenshot 2">
+                        <img src="screenshot3.jpeg" alt="Screenshot 3">
+                        <img src="screenshot4.jpeg" alt="Screenshot 4">
+                        <img src="screenshot5.jpeg" alt="Screenshot 5">
+                        <img src="screenshot6.jpeg" alt="Screenshot 6">
+                    </div>
                 </div>
-                <p class="repo"><a href="https://play.google.com/store/apps/details?id=com.meme.socialapp">Repository Link</a></p>
-            </div>
-            
-            <div class="project">
-                <h3>PawID Pets Info</h3>
-                <p class="tech">Flutter, Firebase, Google Vision API, Google Gemini API</p>
-                <p class="date">September 2024</p>
-                <p>PawID is an Application developed by Flutter where users can detect dog breeds by capturing images or selected images from a gallery. </p>
-                <div class="screenshots">
-                    <img src="breed1.png" alt="Screenshot 1">
-                    <img src="breed2.png" alt="Screenshot 2">
-                    <img src="breed3.png" alt="Screenshot 3">
-                    <img src="breed4.png" alt="Screenshot 4">
-                    <img src="breed5.png" alt="Screenshot 5">
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🐾</div>
+                        <div class="project-links">
+                            <a href="https://play.google.com/store/apps/details?id=co.com.growmore.breedapp" class="project-link" target="_blank">🔗</a>
+                        </div>
+                    </div>
+                    <h3>PawID Pets Info</h3>
+                    <p class="project-tech">Flutter • Firebase • Google Vision API • Google Gemini API</p>
+                    <p class="project-date">September 2024</p>
+                    <p class="project-description">An application developed with Flutter where users can detect dog breeds by capturing images or selecting images from a gallery using AI-powered breed recognition.</p>
+                    <div class="screenshots">
+                        <img src="breed1.png" alt="Screenshot 1">
+                        <img src="breed2.png" alt="Screenshot 2">
+                        <img src="breed3.png" alt="Screenshot 3">
+                        <img src="breed4.png" alt="Screenshot 4">
+                        <img src="breed5.png" alt="Screenshot 5">
+                    </div>
                 </div>
-                <p class="repo"><a href="https://play.google.com/store/apps/details?id=co.com.growmore.breedapp">Google Play Store</a></p>
-            </div>
-            <div class="project">
-                <h3>Nexamena</h3>
-                <p class="tech">Flutter, Firebase, Google Map API, Google Cloud Function, Stripe Payment Gateway</p>
-                <p class="date">November  2024</p>
-                <p>Nexamena is an online store for electronics with a wide range of categories. It Includes Flutter Application along with the Website. Users can add items to a cart, select a location from Google Maps, and Track order status. Stripe payment is also implemented with smooth running of payment process </p>
-                <div class="screenshots">
-                    <img src="nexa1.jpg" alt="Screenshot 1">
-                    <img src="nexa2.jpg" alt="Screenshot 2">
-                    <img src="nexa3.jpg" alt="Screenshot 3">
-                    <img src="nexa4.jpg" alt="Screenshot 4">
-                    <img src="nexa5.jpg" alt="Screenshot 5">
-                    <img src="nexa6.jpg" alt="Screenshot 6">
-                    <img src="nexa7.jpg" alt="Screenshot 6">
-                    <img src="nexa8.jpg" alt="Screenshot 6">
-                    <img src="nexa9.jpg" alt="Screenshot 6">
-                    <img src="nexa10.jpg" alt="Screenshot 6">
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🛒</div>
+                        <div class="project-links">
+                            <a href="https://play.google.com/store/apps/details?id=co.com.nexamena.nexamena" class="project-link" target="_blank">🔗</a>
+                        </div>
+                    </div>
+                    <h3>Nexamena</h3>
+                    <p class="project-tech">Flutter • Firebase • Google Map API • Stripe Payment</p>
+                    <p class="project-date">November 2024</p>
+                    <p class="project-description">An online store for electronics with a wide range of categories. Includes Flutter Application with cart functionality, Google Maps integration, order tracking, and Stripe payment gateway.</p>
+                    <div class="screenshots">
+                        <img src="nexa1.jpg" alt="Screenshot 1">
+                        <img src="nexa2.jpg" alt="Screenshot 2">
+                        <img src="nexa3.jpg" alt="Screenshot 3">
+                        <img src="nexa4.jpg" alt="Screenshot 4">
+                        <img src="nexa5.jpg" alt="Screenshot 5">
+                        <img src="nexa6.jpg" alt="Screenshot 6">
+                    </div>
                 </div>
-                <p class="repo"><a href="https://play.google.com/store/apps/details?id=co.com.nexamena.nexamena">Google Play Store </a></p>
-            </div>
-            <div class="project">
-                <h3>Property Hub</h3>
-                <p class="tech">ASP.NET, SQL, MVC, Identity</p>
-                <p class="date">January 2023 to May 2023</p>
-                <p>Property Hub is a web application developed using ASP.NET MVC architecture, bolstered by the security features of Identity Framework, and powered by SQL Server for robust data management. It serves as a centralized platform facilitating secure property transactions, offering features like user authentication, role-based access control, and secure storage of property listings and transaction data. ASP.NET MVC ensures a well-structured application with distinct separation of concerns, enhancing maintainability and scalability. Identity Framework guarantees user data security through hashed passwords and role-based authorization, while SQL Server provides a reliable backend for storing and managing property details efficiently. With responsive design principles, Property Hub ensures accessibility across devices, making it a dependable choice for buyers and sellers seeking a seamless and secure online property transaction experience.</p>
-                <div class="aspscreenshots">
-                    <img src="screenshotasp1.jpg" alt="Screenshot 1">
-                    <img src="screenshotasp2.jpg" alt="Screenshot 2">
-                    <img src="screenshotasp3.jpg" alt="Screenshot 3">
-                    
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🏠</div>
+                        <div class="project-links">
+                            <a href="https://drive.google.com/drive/folders/19LgOl-26RaJr4Opw6p4KyxZN3yB-G5sA?usp=sharing" class="project-link" target="_blank">🔗</a>
+                        </div>
+                    </div>
+                    <h3>Property Hub</h3>
+                    <p class="project-tech">ASP.NET • SQL • MVC • Identity</p>
+                    <p class="project-date">January 2023 - May 2023</p>
+                    <p class="project-description">A web application for secure property transactions with user authentication, role-based access control, and secure storage of property listings using ASP.NET MVC and SQL Server.</p>
+                    <div class="aspscreenshots">
+                        <img src="screenshotasp1.jpg" alt="Screenshot 1">
+                        <img src="screenshotasp2.jpg" alt="Screenshot 2">
+                        <img src="screenshotasp3.jpg" alt="Screenshot 3">
+                    </div>
                 </div>
-                <p><a href="https://drive.google.com/drive/folders/19LgOl-26RaJr4Opw6p4KyxZN3yB-G5sA?usp=sharing" target="_blank">Link to File</a></p>
-            </div>
-            <div class="project">
-                <h3>Cricket Club Management System</h3>
-                <p class="tech">Window Form Application, SQL</p>
-                <p class="date">August 2021 to January 2022</p>
-                <p>A Windows Forms application for sports management uses SQL Server for data storage, allowing coaches and players to manage their teams and personal profiles efficiently, facilitating team coordination and profile updates, and ensuring seamless sports administration.</p>
-                <p class="repo"><a href="https://github.com/shahbazgondalnew">Repository Link</a></p>
-            </div>
-            <div class="project">
-                <h3>Data Scraping and Sentiment Analysis</h3>
-                <p class="tech">Python, Pycharm, OpenAI API, Tableau, Matplotlib, Google Colaboratory</p>
-                <p class="date">Course Project</p>
-                <ul>
-                    <li>Developed a Flutter application that generates and displays questions using OpenAI's GPT-3 API. The project involved setting up necessary dependencies, creating a CreatedQuestion widget, integrating the API to fetch questions, and displaying them in a dynamic list. Additionally, implemented functionality to save the generated questions as a PDF file, demonstrating skills in API integration, state management, and file handling in Flutter.</li>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🏏</div>
+                        <div class="project-links">
+                            <a href="https://github.com/shahbazgondalnew" class="project-link" target="_blank">🔗</a>
+                        </div>
+                    </div>
+                    <h3>Cricket Club Management System</h3>
+                    <p class="project-tech">Windows Forms • SQL</p>
+                    <p class="project-date">August 2021 - January 2022</p>
+                    <p class="project-description">A Windows Forms application for sports management using SQL Server, allowing coaches and players to manage teams and personal profiles efficiently.</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🤖</div>
+                        <div class="project-links"></div>
+                    </div>
+                    <h3>Data Scraping & AI Projects</h3>
+                    <p class="project-tech">Python • OpenAI API • Tableau • Flutter</p>
+                    <p class="project-date">Course Project</p>
+                    <p class="project-description">Multiple projects including Flutter app with GPT-3 integration, LLM fine-tuning, geospatial data visualization, and web scraping automation.</p>
                     <div class="screenshots">
                         <img src="screenshotq1.jpg" alt="Screenshot 1">
                         <img src="screenshotq2.jpg" alt="Screenshot 2">
-                        <img src="screenshotq4.jpg" alt="Screenshot 4">
                         <img src="screenshotq3.jpg" alt="Screenshot 3">
-                        
-                       
+                        <img src="screenshotq4.jpg" alt="Screenshot 4">
                     </div>
-                    <li>Developed a process for fine-tuning large language models (LLMs) like LLaMA to mimic specific writing styles. The project explores various data preparation approaches, including question-answer formatting, question generation, and neutral text generation. It involves extracting text from PDFs, converting it to JSON format, and consolidating the data for fine-tuning. The implementation includes a code snippet for extracting text from PDFs, converting text files into JSON, and consolidating data. Additionally, the project demonstrates fine-tuning LLaMA using LLaMA Factory with dependencies installed and executed via LLaMA Board.</li>
                     <div class="screenshotsllma">
-                        <img src="llma.PNG" alt="Screenshot 1">
-                        
-                        
-                       
+                        <img src="llma.PNG" alt="LLM Screenshot">
                     </div>
-                    <li>Designed an interactive dashboard for visualizing shapefile data using Streamlit, a Python library for web applications, and GeoPandas for geospatial data handling. The project uses Matplotlib for visualizations and involves loading shapefile data with GeoPandas, displaying the data in a Streamlit app, and creating map visualizations. The load_data function caches shapefile data to enhance performance, while the dashboard sections allow users to view shapefile data attributes and visualize them on an interactive map. This project showcases how to leverage Streamlit and GeoPandas to create user-friendly applications for geospatial analysis and visualization.</li>
-                    <li>Python script for web scraping, utilizing the requests library to retrieve web pages and Beautiful Soup for HTML parsing and data extraction. The script employs a function, scrape_and_save, which takes a URL and a CSV filename as input, retrieves and parses webpage content, extracts relevant elements (images, videos, paragraphs, headings, links), and saves the data to a CSV file using the save_to_csv function. The extracted data is organized into a pandas DataFrame for structured storage. This project demonstrates how to automate data collection from websites, emphasizing the importance of respecting website policies and terms of service for legal and ethical compliance.</li>
-                </ul>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="hobbies">
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="hobbies-section">
         <div class="container">
-            <h2>Hobbies</h2>
-            <ul>
-                <li>Video Editing</li>
-                <li>Social Media Account Management</li>
-                <li>Content Creation</li>
-            </ul>
+            <h2 class="section-title">
+                <span class="title-number">06.</span>
+                <span class="title-text">Hobbies & Interests</span>
+                <span class="title-line"></span>
+            </h2>
+            <div class="hobbies-grid">
+                <div class="hobby-card">
+                    <div class="hobby-icon">🎬</div>
+                    <h3>Video Editing</h3>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-icon">📱</div>
+                    <h3>Social Media Management</h3>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-icon">✍️</div>
+                    <h3>Content Creation</h3>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer>
-    <div class="container">
-        <p>&copy; 2024 Shahbaz Gondal | <a href="privacy.html">Privacy Policy</a></p>
-    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Shahbaz Gondal. Built with ❤️ using Flutter-inspired design</p>
+                <p><a href="privacy.html">Privacy Policy</a></p>
+            </div>
+        </div>
     </footer>
 
 
@@ -239,6 +436,38 @@
     </div>
     
     <script>
+        // Mobile Navigation Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Fullscreen Image Overlay
         const overlay = document.getElementById('fullscreen-overlay');
         const fullscreenImg = document.getElementById('fullscreen-img');
     
@@ -246,11 +475,35 @@
             img.addEventListener('click', () => {
                 fullscreenImg.src = img.src;
                 overlay.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
             });
         });
     
         overlay.addEventListener('click', () => {
             overlay.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.project-card, .experience-card, .skill-category, .volunteer-card, .hobby-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
         });
     </script>
     
