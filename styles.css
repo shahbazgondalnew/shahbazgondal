@@ -2,24 +2,27 @@
    Modern Flutter-Inspired Portfolio Styles
    ============================================ */
 
-/* CSS Variables - Flutter Color Palette */
+/* CSS Variables - Flutter Color Palette - Dark Theme */
 :root {
-    --primary-color: #0175C2;
-    --primary-dark: #025E9B;
-    --secondary-color: #13B9FD;
+    --primary-color: #13B9FD;
+    --primary-dark: #0175C2;
+    --secondary-color: #4facfe;
     --accent-color: #FF6B6B;
     --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
     --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-    --gradient-flutter: linear-gradient(135deg, #0175C2 0%, #13B9FD 100%);
+    --gradient-flutter: linear-gradient(135deg, #13B9FD 0%, #0175C2 100%);
     --bg-dark: #0a0e27;
-    --bg-light: #f8f9fa;
-    --card-bg: #ffffff;
-    --text-primary: #1a1a2e;
-    --text-secondary: #6c757d;
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
-    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
-    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.16);
+    --bg-light: #1a1a2e;
+    --bg-section: #1e2139;
+    --card-bg: #252849;
+    --card-bg-hover: #2d3159;
+    --text-primary: #e4e6f0;
+    --text-secondary: #a0a5c0;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+    --border-color: rgba(19, 185, 253, 0.2);
     --border-radius: 16px;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -39,7 +42,7 @@ body {
     font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     line-height: 1.6;
     color: var(--text-primary);
-    background-color: var(--bg-light);
+    background-color: var(--bg-dark);
     overflow-x: hidden;
 }
 
@@ -56,11 +59,12 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(26, 26, 46, 0.95);
     backdrop-filter: blur(10px);
     box-shadow: var(--shadow-sm);
     z-index: 1000;
     transition: var(--transition);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .nav-container {
@@ -95,6 +99,10 @@ body {
     font-size: 0.95rem;
     position: relative;
     transition: var(--transition);
+}
+
+.nav-link:hover {
+    color: var(--secondary-color);
 }
 
 .nav-link::after {
@@ -228,7 +236,7 @@ body {
     height: 280px;
     border-radius: 50%;
     object-fit: cover;
-    border: 5px solid white;
+    border: 5px solid var(--card-bg);
     box-shadow: var(--shadow-lg);
     position: relative;
     z-index: 1;
@@ -267,8 +275,31 @@ body {
 .hero-description {
     font-size: 1.2rem;
     color: var(--text-secondary);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     max-width: 600px;
+}
+
+.hero-location {
+    font-size: 1rem;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--card-bg);
+    border-radius: 50px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+    font-weight: 500;
+}
+
+.hero-location:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    background: var(--card-bg-hover);
+    border-color: var(--primary-color);
 }
 
 .hero-badges {
@@ -281,11 +312,12 @@ body {
 .badge {
     padding: 0.5rem 1rem;
     background: var(--card-bg);
+    color: var(--text-primary);
     border-radius: 50px;
     font-size: 0.9rem;
     font-weight: 500;
     box-shadow: var(--shadow-sm);
-    border: 1px solid rgba(1, 117, 194, 0.1);
+    border: 1px solid var(--border-color);
     transition: var(--transition);
 }
 
@@ -313,7 +345,7 @@ body {
     text-decoration: none;
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
-    border: 1px solid rgba(1, 117, 194, 0.1);
+    border: 1px solid var(--border-color);
 }
 
 .social-link:hover {
@@ -374,7 +406,7 @@ section {
    Skills Section
    ============================================ */
 .skills-section {
-    background: var(--card-bg);
+    background: var(--bg-section);
 }
 
 .skills-grid {
@@ -388,13 +420,14 @@ section {
     padding: 2rem;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-sm);
-    border: 1px solid rgba(1, 117, 194, 0.1);
+    border: 1px solid var(--border-color);
     transition: var(--transition);
 }
 
 .skill-category:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-md);
+    background: var(--card-bg-hover);
 }
 
 .category-title {
@@ -411,12 +444,12 @@ section {
 
 .skill-tag {
     padding: 0.5rem 1rem;
-    background: linear-gradient(135deg, rgba(1, 117, 194, 0.1), rgba(19, 185, 253, 0.1));
-    border: 1px solid rgba(1, 117, 194, 0.2);
+    background: linear-gradient(135deg, rgba(19, 185, 253, 0.15), rgba(1, 117, 194, 0.15));
+    border: 1px solid var(--border-color);
     border-radius: 8px;
     font-size: 0.9rem;
     font-weight: 500;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     transition: var(--transition);
 }
 
@@ -436,7 +469,7 @@ section {
    Work Experience Section
    ============================================ */
 .work-section {
-    background: var(--bg-light);
+    background: var(--bg-dark);
 }
 
 .timeline {
@@ -453,11 +486,13 @@ section {
     border-left: 4px solid var(--primary-color);
     transition: var(--transition);
     position: relative;
+    border: 1px solid var(--border-color);
 }
 
 .experience-card:hover {
     transform: translateX(10px);
     box-shadow: var(--shadow-md);
+    background: var(--card-bg-hover);
 }
 
 .experience-header {
@@ -516,7 +551,7 @@ section {
    Education Section
    ============================================ */
 .education-section {
-    background: var(--card-bg);
+    background: var(--bg-section);
 }
 
 .education-card {
@@ -526,13 +561,14 @@ section {
     box-shadow: var(--shadow-md);
     display: flex;
     gap: 2rem;
-    border: 1px solid rgba(1, 117, 194, 0.1);
+    border: 1px solid var(--border-color);
     transition: var(--transition);
 }
 
 .education-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-lg);
+    background: var(--card-bg-hover);
 }
 
 .education-icon {
@@ -589,7 +625,7 @@ section {
    Projects Section
    ============================================ */
 .projects-section {
-    background: var(--bg-light);
+    background: var(--bg-dark);
 }
 
 .projects-grid {
@@ -603,7 +639,7 @@ section {
     border-radius: var(--border-radius);
     padding: 2rem;
     box-shadow: var(--shadow-sm);
-    border: 1px solid rgba(1, 117, 194, 0.1);
+    border: 1px solid var(--border-color);
     transition: var(--transition);
     display: flex;
     flex-direction: column;
@@ -613,11 +649,12 @@ section {
 .project-card:hover {
     transform: translateY(-8px);
     box-shadow: var(--shadow-lg);
+    background: var(--card-bg-hover);
 }
 
 .project-card.featured {
     border: 2px solid var(--primary-color);
-    background: linear-gradient(135deg, rgba(1, 117, 194, 0.05), rgba(19, 185, 253, 0.05));
+    background: linear-gradient(135deg, rgba(19, 185, 253, 0.1), rgba(1, 117, 194, 0.1));
 }
 
 .project-header {
@@ -642,7 +679,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(1, 117, 194, 0.1);
+    background: rgba(19, 185, 253, 0.15);
     border-radius: 8px;
     color: var(--primary-color);
     text-decoration: none;
@@ -717,7 +754,7 @@ section {
    Volunteer Section
    ============================================ */
 .volunteer-section {
-    background: var(--card-bg);
+    background: var(--bg-section);
 }
 
 .volunteer-grid {
@@ -732,13 +769,14 @@ section {
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-sm);
     text-align: center;
-    border: 1px solid rgba(1, 117, 194, 0.1);
+    border: 1px solid var(--border-color);
     transition: var(--transition);
 }
 
 .volunteer-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-md);
+    background: var(--card-bg-hover);
 }
 
 .volunteer-icon {
@@ -760,7 +798,7 @@ section {
    Hobbies Section
    ============================================ */
 .hobbies-section {
-    background: var(--bg-light);
+    background: var(--bg-dark);
 }
 
 .hobbies-grid {
@@ -775,7 +813,7 @@ section {
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-sm);
     text-align: center;
-    border: 1px solid rgba(1, 117, 194, 0.1);
+    border: 1px solid var(--border-color);
     transition: var(--transition);
 }
 
@@ -874,6 +912,13 @@ section {
         font-size: 1rem;
     }
 
+    .hero-location {
+        font-size: 0.9rem;
+        justify-content: center;
+        padding: 0.6rem 1.2rem;
+        flex-wrap: wrap;
+    }
+
     .projects-grid {
         grid-template-columns: 1fr;
     }
@@ -883,13 +928,14 @@ section {
         left: -100%;
         top: 70px;
         flex-direction: column;
-        background: white;
+        background: var(--card-bg);
         width: 100%;
         text-align: center;
         transition: 0.3s;
         box-shadow: var(--shadow-md);
         padding: 2rem 0;
         gap: 0;
+        border-top: 1px solid var(--border-color);
     }
 
     .nav-menu.active {
@@ -930,6 +976,11 @@ section {
 
     .hero-subtitle {
         font-size: 1.3rem;
+    }
+
+    .hero-location {
+        font-size: 0.85rem;
+        padding: 0.6rem 1.2rem;
     }
 
     .section-title {
@@ -1008,7 +1059,7 @@ section {
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--bg-light);
+    background: var(--bg-dark);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -1017,5 +1068,5 @@ section {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--primary-dark);
+    background: var(--primary-color);
 }
